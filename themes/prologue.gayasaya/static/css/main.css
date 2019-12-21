@@ -2075,7 +2075,10 @@
 
 		#nav ul li a {
 			display: block;
-			padding: 0.5em 1.5em 0.5em 1.5em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            padding-top: 0em;
+            padding-bottom: 0em;
 			color: rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 			outline: 0;
@@ -2098,7 +2101,7 @@
 					color: #41484c;
 					text-align: center;
 					width: 1.25em;
-					line-height: 1.75em;
+					line-height: 1em;
 				}
 
 			#nav ul li a.active {
@@ -2287,8 +2290,8 @@
 
 			#nav ul li a {
 				font-size: 0.8em;
-				padding-top: 0.5em;
-				padding-bottom: 0.5em;
+				padding-top: 0em;
+				padding-bottom: 0em;
 			}
 
 				#nav ul li a span {
