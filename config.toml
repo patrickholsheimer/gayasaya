@@ -1,3 +1,51 @@
 baseURL = "https://gayasaya.nl/"
 languageCode = "nl-nl"
 title = "Gaya Saya"
+theme = "prologue.gayasaya"
+
+description = "Gaya Saya"
+
+[params]
+    name = "Gaya Saya"
+    description = "Patrick Holsheimer - Edelsmid"
+    about_title = "Over Gaya Saya"
+
+[[params.social]]
+    medium = "email"
+    icon = "envelope"
+    link = "#"
+
+
+[[params.categories]]
+    name = "Ringen"
+
+    [[params.categories.items]]
+        name = "Ring 1"
+
+    [[params.categories.items]]
+        name = "Ring 2"
+
+    [[params.categories.items]]
+        name = "Ring 3"
+
+    [[params.categories.items]]
+        name = "Ring 4"
+
+[[params.categories]]
+    name = "Colliers"
+
+[[params.categories]]
+    name = "Broches"
+
+[[params.categories]]
+    name = "Hangars"
+
+[[params.categories]]
+    name = "Oorbellen"
+
+[[params.categories]]
+    name = "Armbanden"
+
+[[params.categories]]
+    name = "Speciaal"
+

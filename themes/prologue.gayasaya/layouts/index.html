@@ -1,214 +1,203 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Prologue by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>{{ .Title }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+    <head>
+        <title>{{ .Title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    </head>
+    <body>
 
-		<!-- Header -->
-			<div id="header">
+        <!-- Header -->
+            <div id="header">
 
-				<div class="top">
+                <div class="top">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
-							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<p>{{ .Site.Params.description }}</p>
-						</div>
+                    <!-- Logo -->
+                        <div id="logo">
+                            <span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
+                            <h1 id="title">{{ .Site.Params.name }}</h1>
+                            <p>{{ .Site.Params.description }}</p>
+                        </div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <!--
 
-								Prologue's nav expects links in one of two formats:
+                                Prologue's nav expects links in one of two formats:
 
-								1. Hash link (scrolls to a different section within the page)
+                                1. Hash link (scrolls to a different section within the page)
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+                                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-								2. Standard link (sends the user to another page/site)
+                                2. Standard link (sends the user to another page/site)
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+                                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+                            -->
+                            <ul>
+                                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">{{ .Site.Params.about_title }}</span></a></li>
+                                {{ range .Site.Params.categories }}
+                                <li><a href="#{{ lower .name }} " id="{{ lower .name }}-link" class="skel-layers-ignoreHref"><span class="icon fa-th">{{ .name }}</span></a></li>
+                                {{ end }}
+                                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                            </ul>
+                        </nav>
 
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-              {{ range .Site.Params.social }}
-              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-              {{ end }}
-						</ul>
-
-				</div>
-
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
                 </div>
 
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
+                <div class="bottom">
+
+                    <!-- Social Icons -->
+                        <ul class="icons">
+                          {{ range .Site.Params.social }}
+                          <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+                          {{ end }}
+                        </ul>
+
                 </div>
 
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-              </div>
+            </div>
+
+        <!-- Main -->
+            <div id="main">
+
+                <!-- Intro -->
+                    <section id="top" class="one dark cover">
+                        <div class="container">
+
+                            <header>
+                                <h2>Gaya Saya</h2>
+                                <p>Patrick Holsheimer, edelsmid voor unieke sieraden!</p>
+                            </header>
 
 
-						</div>
-					</section>
+                        </div>
+                    </section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+                <!-- About Me -->
+                    <section id="about" class="even">
+                        <div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+                            <header>
+                                <h2>{{ .Site.Params.about_title }} </h2>
+                            </header>
 
-							<a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>
+                            <a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+                            <p>De naam <strong>Gaya Saya</strong> is afkomstig uit Indonesië en betekent <em>Mijn Stijl</em>.</p>
 
-						</div>
-					</section>
+                            <p>Ik ben Patrick Holsheimer, en zowel voor dames als heren ontwerp ik mijn eigen gemaakte sieraden. Hierdoor heeft u dus altijd een uniek sieraad! Ook is het zelfs mogelijk om uw eigen idee en/of ontwerp bij mij aan te leveren.</p>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+                            <p>Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.</p>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+                        </div>
+                    </section>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+                <!-- Portfolio -->
+                    {{ range $index, $_ := .Site.Params.categories }}
+                    <section id="{{ lower .name }}" class="{{ if eq (mod $index 2) 0 }}odd{{ else }}even{{ end }}">
+                        <div class="container">
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+                            <header>
+                                <h2>{{ .name }}</h2>
+                            </header>
 
-						</div>
-					</section>
+                              <div class="row">
+                                <div class="4u 12u$(mobile)">
+                                  {{ range $itemindex, $_ := .items }}
+                                  {{ if eq (mod $itemindex 3) 0 }}
+                                  <article class="item">
+                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <header class="bottom">
+                                      <h3>{{ .name }}</h3>
+                                    </header>
+                                  </article>
+                                  {{ end }}
+                                  {{ end }}
+                                </div>
 
-			</div>
+                                <div class="4u 12u$(mobile)">
+                                  {{ range $itemindex, $_ := .items }}
+                                  {{ if eq (mod $itemindex 3) 1 }}
+                                  <article class="item">
+                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <header class="bottom">
+                                      <h3>{{ .name }}</h3>
+                                    </header>
+                                  </article>
+                                  {{ end }}
+                                  {{ end }}
+                                </div>
 
-		<!-- Footer -->
-			<div id="footer">
+                                <div class="4u 12u$(mobile)">
+                                  {{ range $itemindex, $_ := .items }}
+                                  {{ if eq (mod $itemindex 3) 2 }}
+                                  <article class="item">
+                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <header class="bottom">
+                                      <h3>{{ .name }}</h3>
+                                    </header>
+                                  </article>
+                                  {{ end }}
+                                  {{ end }}
+                                </div>
+                              </div>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
-					</ul>
+                        </div>
+                    </section>
+                    {{ end }}
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/jquery.scrolly.min.js"></script>
-			<script src="/js/jquery.scrollzer.min.js"></script>
-			<script src="/js/skel.min.js"></script>
-			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/main.js"></script>
+                <!-- Contact -->
+                    <section id="contact" class="last">
+                        <div class="container">
 
-	</body>
+                            <header>
+                                <h2>Contact</h2>
+                            </header>
+
+                            <p>Voor eventuele vragen of interesse kunt u me vrijblijvend e-mailen of bellen!</p>
+
+                            <dl>
+                                <dt>E-mail:</dt><dd><a href="mailto:info@gayasaya.nl">info@gayasaya.nl</a></dd>
+                                <dt>Telefoon:</dt><dd>06 55346960</dd>
+                            </dl>
+
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Footer -->
+            <div id="footer">
+
+                <!-- Copyright -->
+                    <ul class="copyright">
+                        <li>{{ .Site.Params.copyright }}</li><li>Design afgeleid van: <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="https://gohugo.io/">Hugo</a></li>
+                        <li>Webdesign door <a href="https://proycon.anaproy.nl">Maarten van Gompel</a></li>
+                        <li>Cover foto door Martin Fuhrmann</li>
+                    </ul>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/jquery.scrolly.min.js"></script>
+            <script src="/js/jquery.scrollzer.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+            <script src="/js/main.js"></script>
+
+    </body>
 </html>
