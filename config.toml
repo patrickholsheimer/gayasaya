@@ -8,7 +8,20 @@ description = "Gaya Saya"
 [params]
     name = "Gaya Saya"
     description = "Patrick Holsheimer - Edelsmid"
-    about_title = "Over Gaya Saya"
+    copyright = "2011-2019 Patrick Holsheimer"
+    title = "Gaya Saya"
+    subtitle = "Patrick Holsheimer, edelsmid voor unieke sieraden!"
+
+
+[params.about]
+    title = "Over Gaya Saya"
+    text = """
+De naam **Gaya Saya** is afkomstig uit Indonesië en betekent *Mijn Stijl*
+
+Ik ben Patrick Holsheimer, en zowel voor dames als heren ontwerp ik mijn eigen gemaakte sieraden. Hierdoor heeft u dus altijd een uniek sieraad! Ook is het zelfs mogelijk om uw eigen idee en/of ontwerp bij mij aan te leveren.
+
+Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
+"""
 
 [[params.social]]
     medium = "email"
@@ -17,35 +30,47 @@ description = "Gaya Saya"
 
 
 [[params.categories]]
-    name = "Ringen"
+    title = "Ringen"
+    text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
+    icon = "circle-o-notch"
 
     [[params.categories.items]]
-        name = "Ring 1"
+        title = "Witgouden ring 14K met **Opaliet**"
+        source = "Witgouden 14K ring met Maansteen_1.jpg"
 
     [[params.categories.items]]
-        name = "Ring 2"
+        title = "Zilveren *Solitaire* ring met witte zirkonia"
+        source = "Zilveren koningsring met witte zirkonia.jpg"
 
     [[params.categories.items]]
-        name = "Ring 3"
+        title = "Smeedring met *Leopard Jaspis*"
+        source = "Smeedring met Jaspis.jpg"
 
     [[params.categories.items]]
-        name = "Ring 4"
+        title = "Zilveren trouwringen met 0.03 karaat Diamant"
+        source = "Trouwringen1.JPG"
 
 [[params.categories]]
-    name = "Colliers"
+    title = "Colliers"
+    icon = "circle-o-notch"
 
 [[params.categories]]
-    name = "Broches"
+    title = "Broches"
+    icon = "circle-o-notch"
 
 [[params.categories]]
-    name = "Hangars"
+    title = "Hangars"
+    icon = "circle-o-notch"
 
 [[params.categories]]
-    name = "Oorbellen"
+    title = "Oorbellen"
+    icon = "circle-o-notch"
 
 [[params.categories]]
-    name = "Armbanden"
+    title = "Armbanden"
+    icon = "circle-o-notch"
 
 [[params.categories]]
-    name = "Speciaal"
+    title = "Speciaal"
+    icon = "th"
 

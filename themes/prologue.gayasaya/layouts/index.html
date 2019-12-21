@@ -45,9 +45,9 @@
                             -->
                             <ul>
                                 <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">{{ .Site.Params.about_title }}</span></a></li>
+                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">{{ .Site.Params.about.title }}</span></a></li>
                                 {{ range .Site.Params.categories }}
-                                <li><a href="#{{ lower .name }} " id="{{ lower .name }}-link" class="skel-layers-ignoreHref"><span class="icon fa-th">{{ .name }}</span></a></li>
+                                <li><a href="#{{ lower .title }} " id="{{ lower .title }}-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .icon }}">{{ .title }}</span></a></li>
                                 {{ end }}
                                 <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
                             </ul>
@@ -76,8 +76,8 @@
                         <div class="container">
 
                             <header>
-                                <h2>Gaya Saya</h2>
-                                <p>Patrick Holsheimer, edelsmid voor unieke sieraden!</p>
+                                <h2>{{ .Site.Params.title }}</h2>
+                                <p>{{ .Site.Params.subtitle}}</p>
                             </header>
 
 
@@ -89,68 +89,73 @@
                         <div class="container">
 
                             <header>
-                                <h2>{{ .Site.Params.about_title }} </h2>
+                                <h2>{{ .Site.Params.about.title }} </h2>
                             </header>
 
                             <a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>
 
-                            <p>De naam <strong>Gaya Saya</strong> is afkomstig uit Indonesië en betekent <em>Mijn Stijl</em>.</p>
-
-                            <p>Ik ben Patrick Holsheimer, en zowel voor dames als heren ontwerp ik mijn eigen gemaakte sieraden. Hierdoor heeft u dus altijd een uniek sieraad! Ook is het zelfs mogelijk om uw eigen idee en/of ontwerp bij mij aan te leveren.</p>
-
-                            <p>Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.</p>
+                            {{ .Site.Params.about.text | markdownify }}
 
                         </div>
                     </section>
 
                 <!-- Portfolio -->
-                    {{ range $index, $_ := .Site.Params.categories }}
-                    <section id="{{ lower .name }}" class="{{ if eq (mod $index 2) 0 }}odd{{ else }}even{{ end }}">
+                    {{ range $index, $category := .Site.Params.categories }}
+                    <section id="{{ lower .title }}" class="{{ if eq (mod $index 2) 0 }}odd{{ else }}even{{ end }}">
                         <div class="container">
 
                             <header>
-                                <h2>{{ .name }}</h2>
+                                <h2>{{ .title }}</h2>
                             </header>
 
+                            <p>
+                            {{ .text | markdownify }}
+                            </p>
+
                               <div class="row">
-                                <div class="4u 12u$(mobile)">
+                               <div class="jewelbox">
+                                <!--<div class="5u 12u$(mobile)">-->
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 0 }}
                                   <article class="item">
-                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
-                                      <h3>{{ .name }}</h3>
+                                      <h3>{{ .title | markdownify }}</h3>
                                     </header>
+                                    {{ .text | markdownify }}
                                   </article>
                                   {{ end }}
                                   {{ end }}
                                 </div>
 
-                                <div class="4u 12u$(mobile)">
+                               <div class="jewelbox">
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 1 }}
                                   <article class="item">
-                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
-                                      <h3>{{ .name }}</h3>
+                                      <h3>{{ .title | markdownify }}</h3>
                                     </header>
+                                    {{ .text | markdownify }}
                                   </article>
                                   {{ end }}
                                   {{ end }}
                                 </div>
 
-                                <div class="4u 12u$(mobile)">
+                               <div class="jewelbox">
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 2 }}
                                   <article class="item">
-                                    <img src="{{ .source }}" alt="{{ .name }}" />
+                                    <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
-                                      <h3>{{ .name }}</h3>
+                                      <h3>{{ .title | markdownify }}</h3>
                                     </header>
+                                    {{ .text | markdownify }}
                                   </article>
                                   {{ end }}
                                   {{ end }}
                                 </div>
+
                               </div>
 
                         </div>
@@ -183,7 +188,7 @@
 
                 <!-- Copyright -->
                     <ul class="copyright">
-                        <li>{{ .Site.Params.copyright }}</li><li>Design afgeleid van: <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="https://gohugo.io/">Hugo</a></li>
+                        <li>&copy; {{ .Site.Params.copyright }}</li><li>Design afgeleid van: <a href="http://html5up.net">HTML5 UP</a></li><li>Gemaakt met <a href="https://gohugo.io/">Hugo</a></li>
                         <li>Webdesign door <a href="https://proycon.anaproy.nl">Maarten van Gompel</a></li>
                         <li>Cover foto door Martin Fuhrmann</li>
                     </ul>
