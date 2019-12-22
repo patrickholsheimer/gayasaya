@@ -55,7 +55,7 @@
 /* Custom  */
    div .jewelcase {
        width: 320px;
-       margin: 2px;
+       margin: 5px;
    }
    div .jewelcase img {
        width: 320px;
@@ -157,7 +157,7 @@
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 
         div .jewelexpo {
-            width: 650px;
+            width: 660px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -215,7 +215,7 @@
 	@media screen and (max-width: 736px) {
 
         div .jewelexpo {
-            width: 320px;
+            width: 330px;
             margin-left: auto;
             margin-right: auto;
         }
