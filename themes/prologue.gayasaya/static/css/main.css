@@ -52,6 +52,16 @@
 		-webkit-text-size-adjust: none;
 	}
 
+/* Custom  */
+   div .jewelcase {
+       width: 320px;
+       margin: 2px;
+   }
+   div .jewelcase img {
+       width: 320px;
+   }
+
+
 /* Box Model */
 
 	*, *:before, *:after {

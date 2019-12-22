@@ -113,10 +113,10 @@
                             </p>
 
                               <div class="row">
-                               <div class="jewelbox">
                                 <!--<div class="5u 12u$(mobile)">-->
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 0 }}
+                                  <div class="jewelcase">
                                   <article class="item">
                                     <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
@@ -124,13 +124,13 @@
                                     </header>
                                     {{ .text | markdownify }}
                                   </article>
+                                  </div>
                                   {{ end }}
                                   {{ end }}
-                                </div>
 
-                               <div class="jewelbox">
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 1 }}
+                                  <div class="jewelcase">
                                   <article class="item">
                                     <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
@@ -138,13 +138,13 @@
                                     </header>
                                     {{ .text | markdownify }}
                                   </article>
+                                  </div>
                                   {{ end }}
                                   {{ end }}
-                                </div>
 
-                               <div class="jewelbox">
                                   {{ range $itemindex, $_ := .items }}
                                   {{ if eq (mod $itemindex 3) 2 }}
+                                  <div class="jewelcase">
                                   <article class="item">
                                     <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
@@ -152,9 +152,9 @@
                                     </header>
                                     {{ .text | markdownify }}
                                   </article>
+                                  </div>
                                   {{ end }}
                                   {{ end }}
-                                </div>
 
                               </div>
 
