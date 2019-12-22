@@ -9,10 +9,10 @@
         <title>{{ .Title }}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
     </head>
     <body>
 
@@ -23,7 +23,7 @@
 
                     <!-- Logo -->
                         <div id="logo">
-                            <span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
+                            <span class="image avatar48"><img src="/img/avatar.jpg" alt="" /></span>
                             <h1 id="title">{{ .Site.Params.name }}</h1>
                             <p>{{ .Site.Params.description }}</p>
                         </div>
@@ -47,7 +47,7 @@
                                 <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                                 <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">{{ .Site.Params.about.title }}</span></a></li>
                                 {{ range .Site.Params.categories }}
-                                <li><a href="#{{ lower .title }} " id="{{ lower .title }}-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .icon }}">{{ .title }}</span></a></li>
+                                <li><a href="#{{ lower .title }}" id="{{ lower .title }}-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .icon }}">{{ .title }}</span></a></li>
                                 {{ end }}
                                 <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
                             </ul>
@@ -92,7 +92,7 @@
                                 <h2>{{ .Site.Params.about.title }} </h2>
                             </header>
 
-                            <!--<a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>-->
+                            <!--<a href="#" class="image featured"><img src="/img/about.jpg" alt="" /></a>-->
 
                             {{ .Site.Params.about.text | markdownify }}
 
@@ -118,7 +118,7 @@
                                   {{ if eq (mod $itemindex 3) 0 }}
                                   <div class="jewelcase">
                                   <article class="item">
-                                    <img src="img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
+                                    <img src="/img/{{ lower $category.title }}/{{ .source }}" alt="{{ .title }}" />
                                     <header class="bottom">
                                       <h3>{{ .title | markdownify }}</h3>
                                     </header>
@@ -196,13 +196,13 @@
             </div>
 
         <!-- Scripts -->
-            <script src="js/jquery.min.js"></script>
-            <script src="js/jquery.scrolly.min.js"></script>
-            <script src="js/jquery.scrollzer.min.js"></script>
-            <script src="js/skel.min.js"></script>
-            <script src="js/util.js"></script>
-            <!--[if lte I 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-            <script src="js/main.js"></script>
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/jquery.scrolly.min.js"></script>
+            <script src="/js/jquery.scrollzer.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+            <script src="/js/main.js"></script>
 
     </body>
 </html>
