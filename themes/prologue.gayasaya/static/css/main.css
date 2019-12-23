@@ -64,6 +64,16 @@
        width: 320px;
    }
 
+   #about img {
+       width: 320px;
+       float: left;
+       margin-right: 30px;
+    }
+    #about p {
+        display: block;
+        text-align: left;
+    }
+
 
 /* Box Model */
 
@@ -218,6 +228,9 @@
             width: 330px;
             margin-left: auto;
             margin-right: auto;
+        }
+        #about p {
+            clear: both;
         }
 
 		.container.\31 25\25 {
