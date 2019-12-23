@@ -231,6 +231,18 @@
         }
         #about p {
             clear: both;
+            text-align: center;
+        }
+
+       #about {
+           text-align: center;
+       }
+       #about img {
+           float: none;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 320px;
         }
 
 		.container.\31 25\25 {
