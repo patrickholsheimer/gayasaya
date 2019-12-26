@@ -2012,7 +2012,7 @@
 
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: "Font Awesome 5 Free";
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -2485,7 +2485,7 @@
 				}
 
 					#headerToggle .toggle:before {
-						font-family: FontAwesome;
+						font-family: "Font Awesome 5 Free" ;
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;

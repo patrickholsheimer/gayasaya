@@ -32,7 +32,7 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
 [[params.categories]]
     title = "Ringen"
     text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
-    icon = "circle-o-notch"
+    icon = "gem"
 
     [[params.categories.items]]
         title = "Witgouden ring 14K met **Opaliet**"
@@ -50,25 +50,26 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
         title = "Zilveren trouwringen met 0.03 karaat Diamant"
         source = "Trouwringen1.JPG"
 
+
 [[params.categories]]
     title = "Colliers"
-    icon = "circle-o-notch"
+    icon = "gem"
 
 [[params.categories]]
     title = "Broches"
-    icon = "circle-o-notch"
+    icon = "gem"
 
 [[params.categories]]
-    title = "Hangars"
-    icon = "circle-o-notch"
+    title = "Hangers"
+    icon = "gem"
 
 [[params.categories]]
     title = "Oorbellen"
-    icon = "circle-o-notch"
+    icon = "gem"
 
 [[params.categories]]
     title = "Armbanden"
-    icon = "circle-o-notch"
+    icon = "gem"
 
 [[params.categories]]
     title = "Speciaal"
