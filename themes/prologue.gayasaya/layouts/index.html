@@ -45,7 +45,7 @@
                             -->
                             <ul>
                                 <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">{{ .Site.Params.about.title }}</span></a></li>
+                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .Site.Params.about.icon }}">{{ .Site.Params.about.title }}</span></a></li>
                                 {{ range .Site.Params.categories }}
                                 <li><a href="#{{ lower .title }}" id="{{ lower .title }}-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .icon }}">{{ .title }}</span></a></li>
                                 {{ end }}
@@ -89,7 +89,7 @@
                         <div class="container">
 
                             <header>
-                                <h2>{{ .Site.Params.about.title }} </h2>
+                                <h2><span class="icon fa-{{ .Site.Params.about.icon }}"></span> {{ .Site.Params.about.title }} </h2>
                             </header>
 
 
@@ -107,7 +107,7 @@
                         <div class="container">
 
                             <header>
-                                <h2>{{ .title }}</h2>
+                                <h2><span class="icon fa-{{.icon}}"></span> {{ .title }}</h2>
                             </header>
 
                             <p>
@@ -176,8 +176,8 @@
                             <p>Voor eventuele vragen of interesse kunt u me vrijblijvend e-mailen of bellen!</p>
 
                             <dl>
-                                <dt>E-mail:</dt><dd><a href="mailto:info@gayasaya.nl">info@gayasaya.nl</a></dd>
-                                <dt>Telefoon:</dt><dd>06 55346960</dd>
+                                <dt><span class="icon fa-envelope"></span> E-mail:</dt><dd><a href="mailto:info@gayasaya.nl">info@gayasaya.nl</a></dd>
+                                <dt><span class="icon fa-phone"></span> Telefoon:</dt><dd>06 55346960</dd>
                             </dl>
 
                         </div>

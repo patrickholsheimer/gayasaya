@@ -15,6 +15,7 @@ description = "Gaya Saya"
 
 [params.about]
     title = "Over Gaya Saya"
+    icon = "user"
     text = """
 De naam **Gaya Saya** is afkomstig uit Indonesië en betekent *Mijn Stijl*
 
