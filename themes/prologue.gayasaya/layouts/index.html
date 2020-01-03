@@ -44,7 +44,7 @@
 
                             -->
                             <ul>
-                                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon">Intro</span></a></li>
                                 <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .Site.Params.about.icon }}">{{ .Site.Params.about.title }}</span></a></li>
                                 {{ range .Site.Params.categories }}
                                 <li><a href="#{{ lower .title }}" id="{{ lower .title }}-link" class="skel-layers-ignoreHref"><span class="icon fa-{{ .icon }}">{{ .title }}</span></a></li>
