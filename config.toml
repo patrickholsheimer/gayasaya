@@ -40,7 +40,7 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
 [[params.categories]]
     title = "Ringen"
     text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
-    icon = "gem"
+    icon = "ring"
 
     [[params.categories.items]]
         title = "Witgouden ring 14K met **Opaliet**"
