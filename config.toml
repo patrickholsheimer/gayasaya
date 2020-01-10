@@ -62,6 +62,14 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
 [[params.categories]]
     title = "Colliers"
     icon = "gem"
+    
+   [[params.categories.items]]
+        title = "Zilveren draad-buis collier met graancirkel en *Zirkonia*"
+        source = "Draad-buis colllier.jpg"
+  
+    
+
+
 
 [[params.categories]]
     title = "Broches"
