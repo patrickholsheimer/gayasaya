@@ -42,6 +42,10 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
     text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
     icon = "ring"
 
+  [[params.categories.items]]
+        title = "Zilveren ring met **Micro pavé**"
+        source = "Zilveren ring met micro-pavé.jpg"
+
     [[params.categories.items]]
         title = "Witgouden ring 14K met **Opaliet**"
         source = "Witgouden 14K ring met Maansteen_1.jpg"
