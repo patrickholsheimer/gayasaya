@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
 	Prologue by HTML5 UP
@@ -1686,7 +1686,7 @@
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 600;
 		color: #000;
 	}
 
