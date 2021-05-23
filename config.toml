@@ -15,7 +15,7 @@ description = "Gaya Saya"
 [params]
     name = "Gaya Saya"
     description = "Patrick Holsheimer - Edelsmid"
-    copyright = "2011-2020 Patrick Holsheimer"
+    copyright = "2011-2021 Patrick Holsheimer"
     title = "Gaya Saya"
     subtitle = "Patrick Holsheimer, ambachtelijk edelsmid voor unieke sieraden!"
 
@@ -71,12 +71,12 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
 [[params.categories]]
     title = "Colliers"
     icon = "gem"
-    
+
    [[params.categories.items]]
         title = "Zilveren draad-buis collier met graancirkel en *Zirkonia*"
         source = "Draad-buis colllier.jpg"
-  
-    
+
+
 
 
 
@@ -95,7 +95,7 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
 [[params.categories]]
     title = "Armbanden"
     icon = "gem"
-    
+
  [[params.categories.items]]
         title = "Zilveren armband met Mokume gane en bakslot"
         source = "Armband met scharnier en slot.jpg"
