@@ -43,11 +43,11 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
     icon = "ring"
 
   [[params.categories.items]]
-        title = "Zilveren ring met *Micro pavé*"
+        title = "Zilveren ring met **micro pavé**"
         source = "Zilveren ring met micro-pavé.jpg"
 
     [[params.categories.items]]
-        title = "Zilveren ring met *vierkante zirkonia*"
+        title = "Zilveren ring met **vierkante Zirkonia**"
         source = "Zilveren ring met vierkante zetkast.jpg"
 
 
@@ -56,15 +56,15 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
         source = "Witgouden 14K ring met Maansteen_1.jpg"
 
     [[params.categories.items]]
-        title = "Zilveren *Solitaire* ring met witte zirkonia"
-        source = "Zilveren koningsring met witte zirkonia.jpg"
+        title = "Zilveren *Solitaire* ring met witte **Zirkonia**"
+        source = "Zilveren koningsring met witte Zirkonia.jpg"
 
     [[params.categories.items]]
-        title = "Smeedring met *Leopard Jaspis*"
+        title = "Smeedring met **Leopard Jaspis**"
         source = "Smeedring met Jaspis.jpg"
 
     [[params.categories.items]]
-        title = "Zilveren trouwringen met 0.03 karaat Diamant"
+        title = "Zilveren trouwringen met 0.03 karaat **Diamant**"
         source = "Trouwringen1.JPG"
 
 
@@ -73,7 +73,7 @@ Uiteraard kunt u voor reparaties ook bij Gaya Saya terecht.
     icon = "gem"
 
    [[params.categories.items]]
-        title = "Zilveren draad-buis collier met graancirkel en *Zirkonia*"
+        title = "Zilveren draad-buis collier met graancirkel en **Zirkonia**"
         source = "Draad-buis colllier.jpg"
 
 
