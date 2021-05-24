@@ -42,7 +42,12 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
     icon = "ring"
 
-  [[params.categories.items]]
+ [[params.categories.items]]
+        title = "Zilveren ring met **micro pavé op rand**"
+        source = "Micro pavé op rand.jpg"
+
+
+    [[params.categories.items]]
         title = "Zilveren ring met **micro pavé**"
         source = "Zilveren ring met micro-pavé.jpg"
 
