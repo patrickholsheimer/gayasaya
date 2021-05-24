@@ -42,10 +42,9 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     text = "Ik maak ringen voor zowel dames als heren, inclusief uiteraard trouwringen!"
     icon = "ring"
 
- [[params.categories.items]]
+    [[params.categories.items]]
         title = "Zilveren ring met **micro pavé op rand**"
         source = "Micro pavé op rand.jpg"
-
 
     [[params.categories.items]]
         title = "Zilveren ring met **micro pavé**"
@@ -54,11 +53,6 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     [[params.categories.items]]
         title = "Zilveren ring met **vierkante Zirkonia**"
         source = "Zilveren ring met vierkante zetkast.jpg"
-
-
-    [[params.categories.items]]
-        title = "Witgouden ring 14K met **Opaliet**"
-        source = "Witgouden 14K ring met Maansteen_1.jpg"
 
     [[params.categories.items]]
         title = "Zilveren *Solitaire* ring met witte **Zirkonia**"
@@ -71,6 +65,11 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     [[params.categories.items]]
         title = "Zilveren trouwringen met 0.03 karaat **Diamant**"
         source = "Trouwringen1.JPG"
+
+    [[params.categories.items]]
+        title = "Witgouden ring 14K met **Opaliet**"
+        source = "Witgouden 14K ring met Maansteen_1.jpg"
+
 
 
 [[params.categories]]
