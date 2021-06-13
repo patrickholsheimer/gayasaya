@@ -109,10 +109,19 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
 
 
 
-
 [[params.categories]]
     title = "Oorbellen"
     icon = "gem"
+
+[[params.categories.items]]
+        title = "Zilveren oorhangers **Filigrain**"
+        source = "Filigrain oorhangers.jpg"
+
+
+
+
+
+
 
 [[params.categories]]
     title = "Armbanden"
