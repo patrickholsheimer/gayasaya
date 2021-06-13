@@ -88,9 +88,21 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     title = "Broches"
     icon = "gem"
 
+
+
 [[params.categories]]
     title = "Hangers"
     icon = "gem"
+
+[[params.categories.items]]
+        title = "Shibuichi hanger met **Zirkonia**"
+        source = "Shibuichi hanger.jpg"
+
+
+
+
+
+
 
 [[params.categories]]
     title = "Oorbellen"
