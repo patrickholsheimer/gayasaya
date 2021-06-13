@@ -76,9 +76,9 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     title = "Colliers"
     icon = "gem"
 
-   [[params.categories.items]]
-        title = "Zilveren draad-buis collier met graancirkel en **Zirkonia**"
-        source = "Draad-buis colllier.jpg"
+[[params.categories.items]]
+    title = "Zilveren draad-buis collier met graancirkel en **Zirkonia**"
+    source = "Draad-buis colllier.jpg"
 
 
 
@@ -89,8 +89,8 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     icon = "gem"
 
 [[params.categories.items]]
-        title = "Zilveren chaton broche met **Zirkonia**"
-        source = "Broche chaton met Zirkonia.jpg"
+    title = "Zilveren chaton broche met **Zirkonia**"
+    source = "Broche chaton met Zirkonia.jpg"
 
 
 
@@ -101,8 +101,8 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     icon = "gem"
 
 [[params.categories.items]]
-        title = "Smeedhanger Shibuichi met **Zirkonia**"
-        source = "Shibuichi hanger.jpg"
+    title = "Smeedhanger Shibuichi met **Zirkonia**"
+    source = "Shibuichi hanger.jpg"
 
 
 
@@ -114,8 +114,8 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     icon = "gem"
 
 [[params.categories.items]]
-        title = "Zilveren oorhangers **Filigrain**"
-        source = "Filigrain oorhangers.jpg"
+    title = "Zilveren oorhangers **Filigrain**"
+    source = "Filigrain oorhangers.jpg"
 
 
 
@@ -127,25 +127,30 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     title = "Armbanden"
     icon = "gem"
 
- [[params.categories.items]]
-        title = "Zilveren armband met **Mokumé gane** en bakslot"
-        source = "Armband met scharnier en slot.jpg"
+[[params.categories.items]]
+    title = "Zilveren armband met **Mokumé gane** en bakslot"
+    source = "Armband met scharnier en slot.jpg"
 
 
 [[params.categories]]
     title = "Speciaal"
     icon = "gem"
+    
 
 [[params.categories.items]]
-        title = "Multifunctioneel sieraad tricolor ring met **Zirkonia**"
-        source = "Speciaal1.jpg"
+     title = "Multifunctioneel sieraad tricolor ring met **Zirkonia**"
+     source = "Speciaal1.jpg"
         
-        [[params.categories.items]]
-        title = "Multifunctioneel sieraad tricolor ring met **Cultivé Parel**"
-        source = "Speciaal5.jpg"
+[[params.categories.items]]
+     title = "Multifunctioneel sieraad tricolor ring met **Cultivé Parel**"
+     source = "Speciaal5.jpg"
         
-  [[params.categories.items]]
-        title = "Multifunctioneel sieraad tricolor broche met **Zirkonia**"
-        source = "Speciaal3.jpg"      
+[[params.categories.items]]
+     title = "Multifunctioneel sieraad tricolor broche met **Zirkonia**"
+     source = "Speciaal3.jpg"      
         
+[[params.categories.items]]
+     title = "Multifunctioneel sieraad tricolor broche met **Zirkonia**"
+     source = "Speciaal3.jpg"      
+
 
