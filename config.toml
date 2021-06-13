@@ -88,6 +88,12 @@ Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
     title = "Broches"
     icon = "gem"
 
+[[params.categories.items]]
+        title = "Chaton broche met **Zirkonia**"
+        source = "Broche chaton met Zirkonia.jpg"
+
+
+
 
 
 [[params.categories]]
