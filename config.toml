@@ -14,10 +14,10 @@ description = "Gaya Saya"
 
 [params]
     name = "Gaya Saya"
-    description = "Patrick Holsheimer - Edelsmid"
+    description = "Patrick Holsheimer - Goudsmid"
     copyright = "2011-2021 Patrick Holsheimer"
     title = "Gaya Saya"
-    subtitle = "Patrick Holsheimer, ambachtelijk edelsmid voor unieke sieraden!"
+    subtitle = "Patrick Holsheimer, ambachtelijk goudsmid voor unieke sieraden!"
 
 
 [params.about]
@@ -26,7 +26,7 @@ description = "Gaya Saya"
     text = """
 De naam **Gaya Saya** is afkomstig uit Indonesië en betekent *Mijn Stijl*
 
-Ik ben Patrick Holsheimer, en zowel voor dames als heren ontwerp ik mijn eigen gemaakte sieraden. Hierdoor heeft u dus altijd een uniek sieraad! Ook is het zelfs mogelijk om uw eigen idee en/of ontwerp bij mij aan te leveren.
+Ik ben Patrick Holsheimer, goudsmid en edelsteenzetter, zowel voor dames als heren ontwerp ik mijn eigen gemaakte sieraden. Hierdoor heeft u dus altijd een uniek sieraad! Ook is het zelfs mogelijk om uw eigen idee en/of ontwerp bij mij aan te leveren.
 
 Uiteraard kunt u voor reparaties ook bij **Gaya Saya** terecht.
 """
